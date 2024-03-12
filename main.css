@@ -1,14 +1,14 @@
 .sobre-a-loja img{
     height: 550px;
 }
-footer img {
+.redes-sociais img {
     height: 30px;
     margin: 5px;
 }
-footer li{
+.redes-sociais li{
     list-style: none;
 }
-footer a{
+.redes-sociais a{
     text-decoration: none;
     color: black;
     font-size: 16px;
@@ -18,26 +18,33 @@ button {
     margin-top: 5px;
     margin-bottom: 5px;
 }
+
+section{
+    padding-top: 105px;
+}
 h2 {
     padding-bottom: 16px;
-    border-bottom: 1px solid #ff6161;
+    border-bottom: 1px solid #0F59C8;
     font-size: 36px;
     font-style: italic;
-    color: #ff6161;
+    color: #0F59C8;
 } 
 header {
     color: #FFFFFF;
-    background-color: #ff6161;
+    background-color: #0F59C8;
     padding: 16px 0;
     margin-bottom: 16px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
 }
 
 header h1{
     font-size: 36px;
     font-weight: bold;
 }
-header .container,
-header ul {
+header .container{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -53,4 +60,60 @@ header li {
 header a {
     text-decoration: none;
     color: #FFFFFF;
+}
+
+
+h4, h5{
+    color: rgba(0, 0, 0, 0.466);
+    font-size: 16px;
+}
+
+
+.card {
+    margin-block: 16px;
+    max-height: 470px;
+    height: 100%;
+}
+
+.produtos .col{
+    max-width: 270px ;
+}
+
+.carousel h3{
+    border-bottom: 1px solid #0F59C8;
+    font-style: italic;
+    color: #0F59C8;
+}
+
+.carousel button span {
+    color: #0F59C8;
+    border: 1px solid black;
+    background-color: #0000008f;
+}
+
+.nav-link{
+    color: #FFFFFF;
+}
+.nav-link:hover{
+    color: #FFFFFF;
+    border: 1px solid #ffffff;
+}
+
+.carousel{
+    z-index: 0;
+}
+
+footer{
+    background-color: #0F59C8;
+    padding: 10px;
+}
+footer h4{
+    color: #FFFFFF;
+    font-size: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    .carousel {
+        width: 10px;
+    }
 }

@@ -3,155 +3,216 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/lib/bootstrap.min.css">
     <title>Loja de celular</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <header>
-        <div class="container">
-            <h1>Loja de celular</h1>
-            <ul>
-                <li>
-                    <a href="#sobre-a-loja">Sobre a loja</a>
-                </li>
-                <li>
-                    <a href="#Produtos">Produtos</a>
-                </li>
-                <li>
-                    <a href="#contato">Contato</a>
-                </li>
-                <li>
-                    <a href="#contato">Redes Sociais</a>
-                </li>
-            </ul>
+    <header id="cabecalho">
+        <div class="navbar navbar-expand-lg">
+            <div class="container">
+                <h1>Loja de celular</h1>
+                <button type="button" class="navbar-toggler" data-bs-target="#menu" data-bs-toggle="collapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <nav id="menu" class="navbar-collapse collapse justify-content-end">
+                    <ul class="nav nav-pills">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#sobre-a-loja">Sobre a loja</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Produtos">Produtos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contato">Contato-Redes Sociais</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
         </div>
     </header>
-    <section id="sobre-a-loja">
-        <div class="container sobre-a-loja">
-            <div class="row">
-                <div class="col">
-                    <img src="/imagem/loja-de-celular.jpg" alt="loja de celular">
-                </div>
-                <div class="col">
-                    <h2>Sobre a loja</h2>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus consequatur earum eos consectetur ad amet, nam eaque, cum blanditiis totam a error neque dolor veniam sed voluptates, iusto minima!
-                    </p>
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus consequatur earum eos consectetur ad amet, nam eaque, cum blanditiis totam a error neque dolor veniam sed voluptates, iusto minima!
-                    </p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section id="Produtos">
-        <div class="container">
-            <h2>Produtos</h2>
-            <div class="row">
-                <div class="col-3">
-                    <div>
-                        <img src="https://via.placeholder.com/250x250/">
-                        <h3>Nome do produto</h3>
-                        <h4>Preço</h4>
-                        <h5>Descrição</h5>
-                        <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+    <div data-bs-spy="scroll" data-bs-target="#cabecalho">
+        <section id="sobre-a-loja">
+            <div class="container sobre-a-loja">
+                <div class="row">
+                    <div class="col">
+                        <div id="carousel-exemplo" class="carousel carousel-fade slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div data-bs-interval="3000" class="carousel-item active">
+                                    <img src="/imagem/loja-de-celular.jpg">
+                                </div>
+                                <div data-bs-interval="3000" class="carousel-item">
+                                    <img src="/imagem/OakPhone.png">
+                                    <div class="carousel-caption">
+                                        <h3>OakPhone</h3>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="3000" class="carousel-item">
+                                    <img src="/imagem/PeraPhone.jpg">
+                                    <div class="carousel-caption">
+                                        <h3>PearPhone</h3>
+                                    </div>
+                                </div>
+                                <div data-bs-interval="3000" class="carousel-item">
+                                    <img src="/imagem/Sunsung.jpg">
+                                    <div class="carousel-caption">
+                                        <h3>Sunsung</h3>
+                                    </div>
+                                </div>
+                                <button class="carousel-control-prev" data-bs-target="#carousel-exemplo" data-bs-slide="prev" type="button">
+                                   <span class="carousel-control-prev-icon"></span> 
+                                </button>
+                                <button class="carousel-control-next" data-bs-target="#carousel-exemplo" data-bs-slide="next" type="button">
+                                    <span class="carousel-control-next-icon"></span> 
+                                 </button>
+                                 <div class="carousel-indicators">
+                                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="0" class="active"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                                    <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="3"></button>
+                                 </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="https://via.placeholder.com/250x250/">
-                        <h3>Nome do produto</h3>
-                        <h4>Preço</h4>
-                        <h5>Descrição</h5>
-                        <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="https://via.placeholder.com/250x250/">
-                        <h3>Nome do produto</h3>
-                        <h4>Preço</h4>
-                        <h5>Descrição</h5>
-                        <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="https://via.placeholder.com/250x250/">
-                        <h3>Nome do produto</h3>
-                        <h4>Preço</h4>
-                        <h5>Descrição</h5>
-                        <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="https://via.placeholder.com/250x250/">
-                        <h3>Nome do produto</h3>
-                        <h4>Preço</h4>
-                        <h5>Descrição</h5>
-                        <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
-                    </div>
-                </div>
-                <div class="col-3">
-                    <div>
-                        <img src="https://via.placeholder.com/250x250/">
-                        <h3>Nome do produto</h3>
-                        <h4>Preço</h4>
-                        <h5>Descrição</h5>
-                        <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                    <div class="col">
+                        <h2>Sobre a loja</h2>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus consequatur earum eos consectetur ad amet, nam eaque, cum blanditiis totam a error neque dolor veniam sed voluptates, iusto minima!
+                        </p>
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis accusamus consequatur earum eos consectetur ad amet, nam eaque, cum blanditiis totam a error neque dolor veniam sed voluptates, iusto minima!
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+        <section class="produtos" id="Produtos">
+            <div class="container">
+                <h2>Produtos</h2>
+                <div class="row row-cols-auto">
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagem/OakPhone.png">
+                            <div class="card-body">
+                                <h3 class="card-title">OakPhone</h3>
+                                <h4 class="card-subtitle">R$ 899,99</h4>
+                                <h5 class="card-text">Esta no mundo digital</h5>
+                                <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagem/PeraPhone.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title">PearPhone</h3>
+                                <h4 class="card-subtitle">R$ 1.399,99</h4>
+                                <h5 class="card-text">PeraPhone o celular que você não se preocupa em esquecer o carregador</h5>
+                                <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagem/Sunsung.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title">Sunsung</h3>
+                                <h4 class="card-subtitle">R$ 989,99</h4>
+                                <h5 class="card-text">De micro ondas a tanques de guerra passamos pelo seu celular</h5>
+                                <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagem/PeraPhone.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title">PearPhone</h3>
+                                <h4 class="card-subtitle">R$ 1399,99</h4>
+                                <h5 class="card-text">PeraPhone o celular que você não se preocupa em esquecer o carregador</h5>
+                                <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagem/OakPhone.png">
+                            <div class="card-body">
+                                <h3 class="card-title">OakPhone</h3>
+                                <h4 class="card-subtitle">R$ 899,99</h4>
+                                <h5 class="card-text">Esta no mundo digital</h5>
+                                <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <img src="/imagem/Sunsung.jpg">
+                            <div class="card-body">
+                                <h3 class="card-title">Sunsung</h3>
+                                <h4 class="card-subtitle">R$ 989,99</h4>
+                                <h5 class="card-text">De micro ondas a tanques de guerra passamos pelo seu celular</h5>
+                                <button class="btn btn-outline-primary">Adicionar ao carrinho</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div id="contato">
+                            <h2>Contato</h2>
+                            <form class="form">
+                                <label for="nome" class="form-label">Seu nome:</label>
+                                <input id="nome" class="form-control" type="text">
+                                <label for="email" class="form-label">Seu email:</label>
+                                <input id="email" class="form-control" type="email">
+                                <label for="tel" class="form-label">Seu telefone:</label>
+                                <input id="tel" class="form-control" type="tel">
+                                <label for="mensagem" class="form-label">Sua mensagem:</label>
+                                <textarea id="mensagem" class="form-control"></textarea>
+                                <button class="btn btn-success">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div class="col-sm-auto">
+                        <div id="contato" class="redes-sociais">
+                            <h2>Redes sociais</h2>
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td><a href=""><img src="/imagem/instagram.png"></a></td>
+                                        <td><a href="">Instagram</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><img src="/imagem/facebook.png"></a></td>
+                                        <td><a href="">Facebook</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><img src="/imagem/youtube.png"></a></td>
+                                        <td><a href="">Youtube</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td><a href=""><img src="/imagem/x.jpg"></a></td>
+                                        <td><a href="">X</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
     <footer>
         <div class="container">
-            <div class="row">
-                <div class="col-9">
-                    <section id="contato">
-                        <h2>Contato</h2>
-                        <form class="form">
-                            <label for="nome" class="form-label">Seu nome:</label>
-                            <input id="nome" class="form-control" type="text">
-                            <label for="email" class="form-label">Seu email:</label>
-                            <input id="email" class="form-control" type="email">
-                            <label for="tel" class="form-label">Seu telefone:</label>
-                            <input id="tel" class="form-control" type="tel">
-                            <label for="mensagem" class="form-label">Sua mensagem:</label>
-                            <textarea id="mensagem" class="form-control"></textarea>
-                            <button class="btn btn-success">Enviar</button>
-                        </form>
-                    </section>
-                </div>
-                <div class="col-3">
-                    <section>
-                        <h2>Redes sociais</h2>
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><a href=""><img src="/imagem/instagram.png"></a></td>
-                                    <td><a href="">Instagram</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href=""><img src="/imagem/facebook.png"></a></td>
-                                    <td><a href="">Facebook</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href=""><img src="/imagem/youtube.png"></a></td>
-                                    <td><a href="">Youtube</a></td>
-                                </tr>
-                                <tr>
-                                    <td><a href=""><img src="/imagem/x.jpg"></a></td>
-                                    <td><a href="">X</a></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </section>
-                </div>
-            </div>
+            <h4>&copy;Todos os direitos reservados</h4>
         </div>
     </footer>
+    <script src="/lib/bootstrap.bundle.min.js"></script>
+    <script src="main.js"></script>
 </body>
 </html>
